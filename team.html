@@ -4,9 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>GreenBoard Team</title>
 </head>
-<body>
+
+
+<body class="container-fluid">
+    
+
+    <!--header section-->
+    <div class="header ">
+        <div><h1>GreenBoard</h1></div>
+        <div><a href="#" class="btn btn-primary">add member</a></div>
+    
+    </div>
+
+    <!--filter section-->
+    <div class="filters">
+        <div>
+            <label for="EMPID">ID :</label>
+            <input type="text" name="empid" id="EMPID">
+        </div>
+
+        <div>
+            <label for="Role">Role :</label>
+            <select name="role" id="Role" > 
+                <option value="choose a role">choose a role</option>
+                <option value="MTS">MTS</option>
+                <option value="SDE2">SDE2</option>
+                <option value="CSA">CSA</option>
+                <option value="SDE1">SDE1</option>
+            </select>
+        </div>
+
+        <a href="#" class="btn btn-secondary">search</a>
+    </div>
+
+
+    <!--list of members section-->
+    <div >
+        <p>List of members -</p>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td>01</td>
+                <td>kiran</td>
+                <td>SDE</td>
+                <td>kk@gb.com</td>
+                <td>Accepted</td>
+                <td class="action">
+                    <div><a href="#" class="btn btn-secondary">edit</a></div>
+                    <div><a href="#" class="btn btn-danger">remove</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>02</td>
+                <td>manoj</td>
+                <td>SDE1</td>
+                <td>manoj@gb.com</td>
+                <td>Accepted</td>
+                <td class="action">
+                    <div><a href="#" class="btn btn-secondary">edit</a></div>
+                    <div><a href="#" class="btn btn-danger">remove</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>03</td>
+                <td>partha</td>
+                <td>SDE2</td>
+                <td>partha@gb.com</td>
+                <td>Pending</td>
+                <td class="action">
+                    <div><a href="#" class="btn btn-secondary">edit</a></div>
+                    <div><a href="#" class="btn btn-danger">remove</a></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--page scrolling buttons-->
+    <div class="changePage">
+        <a href="#" class="btn btn-outline-dark">
+            <i class="fa fa-angle-left" aria-hidden="true"></i></i>
+        </a>
+        <span id="currentPage">1</span>/<span id="totalPage">5</span>
+        <a href="#" class="btn btn-outline-dark">
+            <i class="fa fa-angle-right" aria-hidden="true"></i></i>
+        </a>
+    </div>
+
+
+    <!--footer section-->
+    <div class="footer">
+        <p>&copy;greenboard.edu</p>
+    </div>
+
+
+    <!--bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
 </html>
